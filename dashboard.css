@@ -1,0 +1,97 @@
+.nav {
+font-size: 30px;
+ width: 100%;
+  position: relative;
+  top: 300px; 
+  font-weight: bolder;
+  background-color: green;
+  color: white;
+  
+}
+.body-home{
+	background-image: url(img/T3.jfif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	position: center;
+
+}
+
+
+#homeNav {
+	background: rgba(255,255,255,0.5) !important;
+}
+. {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+}
+body {
+	display: flex;
+}
+.sidebar {
+	position: sticky;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 340px;
+	height: 240vh;
+	padding: 0 1.7rem;
+	color: #fff;
+	overflow: hidden;
+	transition: all 0.5s linear;
+	background-color: green;
+}
+.logo {
+	height: 80px;
+	padding: 16px;
+}
+.menu {
+	height: 88%;
+	position: relative;
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: 1rem;
+	 margin: 8px 0;
+	 border-radius: 8px;
+	 transition: all 0.5s ease-in-out;
+}
+.menu li:hover {
+	background-color: grey;
+
+}
+.menu a {
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	grid-gap: 10px;
+}
+.menu a span {
+	overflow: hidden;
+
+}
+.logout {
+	position: absolute;
+	bottom: 150;
+	left: 0;
+	width: 100%;
+}
+.maincontent {
+	
+position: relative;
+	top: 0;
+	left: 0;
+	bottom: 0;
+}
+.headertitle img {
+	width: 250%;
+	height: auto%;
+	position: center;
+}

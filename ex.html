@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmers' Kilogram Records</title>
+<style>
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+</style>
+</head>
+<body>
+
+<h2>Farmers' Kilogram Records</h2>
+
+<table id="kilogramTable">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Kilograms (Kg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Table rows will be inserted here dynamically -->
+  </tbody>
+</table>
+
+<script>
+// Sample data (to be replaced with actual data fetched from the server)
+var kilogramRecords = [
+  { date: "2024-04-15", kilograms: 100 },
+  { date: "2024-04-16", kilograms: 120 },
+  { date: "2024-04-17", kilograms: 90 }
+];
+
+// Function to populate the table with data
+function populateTable() {
+  var tableBody = document.getElementById('kilogramTable').getElementsByTagName('tbody')[0];
+  tableBody.innerHTML = ''; // Clear existing rows
+
+  kilogramRecords.forEach(function(record) {
+    var row = tableBody.insertRow();
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.textContent = record.date;
+    cell2.textContent = record.kilograms;
+  });
+}
+
+// Call the populateTable function to initially populate the table
+populateTable();
+</script>
+
+</body>
+</html>
